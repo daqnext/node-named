@@ -4,10 +4,6 @@ Node-named is a lightweight DNS server written in pure javascript. It has
 limited support for the DNS spec, but aims to implement all of the *common*
 functionality that is in use today. 
 
-** This project is not actively maintained **
-I've received a lot of great PRs for this project, but I don't have the capacity to actively maintain this library at the moment. I feel strongly about maintaining backwards compatibility for people who rely on it, so any PRs would also need to adhere to keeping the API sane, or contribute to some improvement in performance.
-
-
 
 ## Creating a DNS Server
 ```javascript
@@ -15,8 +11,8 @@ var named = require('./lib/index');
 var server = named.createServer();
 var ttl = 300;
 
-server.listen(9999, '127.0.0.1', function() {
-  console.log('DNS server started on port 9999');
+server.listen(53, '0.0.0.0', function() {
+  console.log('DNS server started on port 53');
 });
 
 server.on('query', function(query) {
@@ -84,16 +80,4 @@ bunyan by default. Your logger must expose the functions 'info', 'debug',
  * Add support for PTR records
  * Add support for TCP AXFR requests
 
-## Tell me even more...
-
-When DNS was designed it was designed prior
-to the web existing, so many of the features in the RFC are either never used,
-or were never implemented. This server aims to be RFC compliant, but does not
-implement any other protocol other than INET (the one we're all used to), and
-only supports a handful of record types (the ones that are in use on a regular
-basis).
-
-## Looking up Records
-
-There are a few handy ways to lookup DNS records in node. 
-https://github.com/LCMApps/dns-lookup-cache
+ 
