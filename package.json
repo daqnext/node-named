@@ -1,7 +1,7 @@
 {
   "name": "lts-dns-server-lib",
   "description": "DNS server library for node.js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "leo",
   "contributors": [
    
