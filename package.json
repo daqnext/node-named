@@ -1,14 +1,14 @@
 {
-  "name": "named",
+  "name": "lts-dns-server-lib",
   "description": "DNS server library for node.js",
-  "version": "0.0.1",
-  "author": "trevoro <trevoro@gmail.com>",
+  "version": "0.1.0",
+  "author": "leo",
   "contributors": [
-    "Mark Cavage"
+   
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/trevoro/node-named.git"
+    "url": "git://github.com/daqnext/node-named.git"
   },
   "main": "lib/index.js",
   "engines": {
@@ -20,3 +20,4 @@
   },
   "license": "MIT"
 }
+
