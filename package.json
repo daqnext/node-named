@@ -1,7 +1,7 @@
 {
   "name": "lts-dns-server-lib",
   "description": "DNS server library for node.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "leo",
   "contributors": [
    
@@ -15,8 +15,7 @@
     "node": ">=0.6"
   },
   "dependencies": {
-    "bunyan": "0.7.0",
-    "ipaddr.js": "0.1.2"
+    "bunyan": "0.7.0"
   },
   "license": "MIT"
 }
